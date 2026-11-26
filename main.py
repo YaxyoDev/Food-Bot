@@ -23,7 +23,7 @@ dp = Dispatcher()
 
 @dp.message(Command('start'))
 async def start_kommand(message: Message):
-    xabar = "Assalomu alaykum. Jonibek botga xush kelibsiz!"
+    xabar = "Welcome to my Bot"
     await message.answer(xabar, reply_markup=start_button())
 
 @dp.message(F.text == "Ortga")
